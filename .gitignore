@@ -1,0 +1,21 @@
+
+# OSX stuff
+.DS_Store
+
+# node stuff
+node_modules
+
+# assets build path
+wordpress/wp-content/themes/retrouve/assets/build
+
+# wordpress stuff not important for the starter theme
+wordpress/*.php
+wordpress/wp-includes/
+wordpress/wp-content/themes/index.php
+wordpress/wp-content/plugins/
+wordpress/wp-content/index.php
+wordpress/license.txt
+wordpress/.htaccess
+wordpress/readme.html
+wordpress/wp-admin/
+
