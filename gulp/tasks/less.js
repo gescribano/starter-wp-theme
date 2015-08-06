@@ -6,6 +6,7 @@ var rename = require('gulp-rename');
 var minifyCss = require('gulp-minify-css');
 var gulpif = require('gulp-if');
 var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
 
 // CSS compilation tasks
 gulp.task( 'less', function(){
@@ -17,6 +18,7 @@ gulp.task( 'less', function(){
     .on( 'error', handleErrors )
     .pipe( sourcemaps.init() )
       .pipe( less({compress:false}) )
+      .pipe( autoprefixer() )
       .pipe( gulpif( !global.isWatching, minifyCss({compatibility:'ie8'}) ) )
     .pipe( sourcemaps.write('.') )
     .pipe( gulp.dest( dest ) );

@@ -1,0 +1,37 @@
+div.header{
+
+  a.logo{
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+  }
+
+  ul.navbar-nav a{
+    text-transform: uppercase;
+  }
+
+  // desktop only tweaks
+  @media ( min-width: @screen-sm-min ) {
+    #navbar{
+      position: relative;
+      // padding: 0;
+    }
+    ul.navbar-center{
+      float: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    ul.navbar-nav > li:first-child > a{
+      padding-left: 0;
+    }
+    ul.navbar-nav > li:last-child > a{
+      padding-right: 0;
+    }
+    ul.navbar-left {
+      margin-left: -15px;
+    }
+  }
+
+}
+

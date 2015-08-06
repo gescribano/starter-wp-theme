@@ -11,7 +11,9 @@ add_theme_support( 'post-thumbnails' );
 function pydp_register_nav_menus_hook() {
   register_nav_menus(
     array(  
-      'header' => "Header Menu", 
+      'header-left' => "Header Menu Left", 
+      'header-center' => "Header Menu Center", 
+      'header-right' => "Header Menu Right", 
       'footer-left' => "Footer Menu Left",
       'footer-right' => "Footer Menu Right",
     )
